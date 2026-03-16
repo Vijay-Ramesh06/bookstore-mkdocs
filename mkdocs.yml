@@ -1,0 +1,93 @@
+site_name: BookStore API Documentation
+site_description: OpenAPI documentation for the BookStore API
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Setup:
+      - Introduction: getting-started/setup/introduction.md
+      - Environment Setup: getting-started/setup/environment-setup.md
+      - Testing: getting-started/setup/testing.md
+    - Authentication:
+      - Authentication: getting-started/authentication/authentication.md
+      - Rate Limiting: getting-started/authentication/rate-limiting.md
+    - Basics:
+      - Quickstart: getting-started/basics/quickstart.md
+      - Errors: getting-started/basics/errors.md
+  - Endpoints:
+    - Books:
+      - List Books: endpoints/books/list-books.md
+      - Get Book: endpoints/books/get-book.md
+      - Create Book: endpoints/books/create-book.md
+      - Update Book: endpoints/books/update-book.md
+      - Delete Book: endpoints/books/delete-book.md
+    - Authors:
+      - List Authors: endpoints/authors/list-authors.md
+      - Get Author: endpoints/authors/get-author.md
+      - Create Author: endpoints/authors/create-author.md
+      - Update Author: endpoints/authors/update-author.md
+      - Delete Author: endpoints/authors/delete-author.md
+    - Orders:
+      - List Orders: endpoints/orders/list-orders.md
+      - Get Order: endpoints/orders/get-order.md
+      - Create Order: endpoints/orders/create-order.md
+      - Update Order: endpoints/orders/update-order.md
+      - Cancel Order: endpoints/orders/cancel-order.md
+    - Customers:
+      - List Customers: endpoints/customers/list-customers.md
+      - Get Customer: endpoints/customers/get-customer.md
+      - Create Customer: endpoints/customers/create-customer.md
+      - Update Customer: endpoints/customers/update-customer.md
+    - Categories:
+      - List Categories: endpoints/categories/list-categories.md
+      - Get Category: endpoints/categories/get-category.md
+      - Create Category: endpoints/categories/create-category.md
+    - Reviews:
+      - List Reviews: endpoints/reviews/list-reviews.md
+      - Create Review: endpoints/reviews/create-review.md
+      - Delete Review: endpoints/reviews/delete-review.md
+    - Inventory:
+      - Get Inventory: endpoints/inventory/get-inventory.md
+      - Update Inventory: endpoints/inventory/update-inventory.md
+  - Guides:
+    - API Usage:
+      - Pagination: guides/api-usage/pagination.md
+      - Filtering: guides/api-usage/filtering.md
+      - Sorting: guides/api-usage/sorting.md
+    - Integration:
+      - Webhooks: guides/integration/webhooks.md
+      - SDKs: guides/integration/sdks.md
+      - Use Cases: guides/integration/use-cases.md
+      - Best Practices: guides/integration/best-practices.md
+  - OpenAPI:
+    - Specification:
+      - Overview: openapi/specification/overview.md
+      - Spec: openapi/specification/spec.md
+      - Testing: openapi/specification/testing.md
+  - Reference:
+    - Data Models:
+      - Schemas: reference/data-models/schemas.md
+      - Status Codes: reference/data-models/status-codes.md
+      - Glossary: reference/data-models/glossary.md
+    - Support:
+      - Changelog: reference/support/changelog.md
+      - FAQ: reference/support/faq.md
