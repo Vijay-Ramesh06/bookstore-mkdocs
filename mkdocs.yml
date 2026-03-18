@@ -20,6 +20,16 @@ theme:
     - search.suggest
     - search.highlight
 
+extra:
+  version:
+    provider: mike
+
+plugins:
+  - search
+  - mike:
+      alias_type: symlink
+      canonical_version: latest
+      
 nav:
   - Home: index.md
   - Getting Started:
